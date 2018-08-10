@@ -11,7 +11,9 @@ DMonk.on('ready', () => {
 Dema.on('ready', () => {
   console.log(`Logged in as ${Dema.user.tag}!`);
 });
-  console.log(`Logged in as ${liuruo.user.tag}!`);
+liuruo.on('ready', () => {
+ console.log(`Logged in as ${liuruo.user.tag}!`);
+});
 Blood.on('ready', () => {
   console.log(`Logged in as ${Blood.user.tag}!`);
 });
