@@ -7,9 +7,15 @@ const Sara = new Discord.Client(); //"NDc3NTE3NzgyNTI3OTAxNjk3.Dk9S5A.EunOyfEJCJ
 
 DMonk.on('ready', () => {
   console.log(`Logged in as ${DMonk.user.tag}!`);
+});
+Dema.on('ready', () => {
   console.log(`Logged in as ${Dema.user.tag}!`);
+});
   console.log(`Logged in as ${liuruo.user.tag}!`);
+Blood.on('ready', () => {
   console.log(`Logged in as ${Blood.user.tag}!`);
+});
+Sara.on('ready', () => {
   console.log(`Logged in as ${Sara.user.tag}!`);
 });
  DMonk.on('message', message => {
