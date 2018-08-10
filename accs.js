@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const D-Monk = new Discord.Client(); //"NDc2MzUwMjQ0ODA4ODE4Njg5.Dk9L7Q.GjmVCFt_ZuLBEcmxCUXPzBfeEdw"
+const DMonk = new Discord.Client(); //"NDc2MzUwMjQ0ODA4ODE4Njg5.Dk9L7Q.GjmVCFt_ZuLBEcmxCUXPzBfeEdw"
 const Dema = new Discord.Client(); //"NDc3NTExNjY4MjA1ODc5Mjk2.Dk9QYQ.o7sbq8LxF6Dq3kXgc-2NHCwLtLw"
 const liuruo = new Discord.Client(); //"NDc3NTE1NTEwMTk2NjAwODQy.Dk9RLw.TOdhXimFzGcM9x2W0wvYGsOEQvI"
 const Blood = new Discord.Client(); //"NDc3NTE2OTAzODIxMjEzNjk2.Dk9SIA.vuwfNgghTC0w6jsUyovF904DdYA"
@@ -48,7 +48,7 @@ client.on('ready', () => {
       }
   })
 
-D-Monk.login(process.env.D-MONK);
+DMonk.login(process.env.DMONK);
 Dema.login(process.env.DEMA);
 liuruo.login(process.env.LIURUO);
 Blood.login(process.env.BLOOD);
