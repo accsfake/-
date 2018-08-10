@@ -5,7 +5,7 @@ const liuruo = new Discord.Client(); //"NDc3NTE1NTEwMTk2NjAwODQy.Dk9RLw.TOdhXimF
 const Blood = new Discord.Client(); //"NDc3NTE2OTAzODIxMjEzNjk2.Dk9SIA.vuwfNgghTC0w6jsUyovF904DdYA"
 const Sara = new Discord.Client(); //"NDc3NTE3NzgyNTI3OTAxNjk3.Dk9S5A.EunOyfEJCJ80hU6ozyDAuXTF2mw"
 
-client.on('ready', () => {
+DMonk.on('ready', () => {
   console.log(`Logged in as ${DMonk.user.tag}!`);
   console.log(`Logged in as ${Dema.user.tag}!`);
   console.log(`Logged in as ${liuruo.user.tag}!`);
