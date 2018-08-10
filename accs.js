@@ -14,35 +14,35 @@ client.on('ready', () => {
 });
  D-Monk.on('message', message => {
       if(message.content.startsWith('Mjoin')) {
-      if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
    Dema.on('message', message => {
       if(message.content.startsWith('Djoin')) {
-      if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
  liuruo.on('message', message => {
       if(message.content.startsWith('ljoin')) {
-      if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
  Blood.on('message', message => {
       if(message.content.startsWith('Bjoin')) {
-      if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
  Sara.on('message', message => {
       if(message.content.startsWith('Sjoin')) {
-      if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
