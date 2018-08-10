@@ -12,7 +12,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${Blood.user.tag}!`);
   console.log(`Logged in as ${Sara.user.tag}!`);
 });
- D-Monk.on('message', message => {
+ DMonk.on('message', message => {
       if(message.content.startsWith('Mjoin')) {
       if (message.author.id !== '434845976050794516') return
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
