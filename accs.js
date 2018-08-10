@@ -6,7 +6,7 @@ const Blood = new Discord.Client(); //"NDc3NTE2OTAzODIxMjEzNjk2.Dk9SIA.vuwfNgghT
 const Sara = new Discord.Client(); //"NDc3NTE3NzgyNTI3OTAxNjk3.Dk9S5A.EunOyfEJCJ80hU6ozyDAuXTF2mw"
 
 client.on('ready', () => {
-  console.log(`Logged in as ${D-Monk.user.tag}!`);
+  console.log(`Logged in as ${DMonk.user.tag}!`);
   console.log(`Logged in as ${Dema.user.tag}!`);
   console.log(`Logged in as ${liuruo.user.tag}!`);
   console.log(`Logged in as ${Blood.user.tag}!`);
