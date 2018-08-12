@@ -32,7 +32,7 @@ DMonk.on('message', message => {
         if(message.content !== 'Mplay') return;
   const ytdl = require('ytdl-core');
     const streamOptions = { seek: 0, volume: 100 };
-    const broadcast = client.createVoiceBroadcast();
+    const broadcast = DMonk.createVoiceBroadcast();
    
     message.guild.member(message.author).voiceChannel.join()
       .then(connection => {
@@ -54,7 +54,7 @@ Dema.on('message', message => {
         if(message.content !== 'Dplay') return;
   const ytdl = require('ytdl-core');
     const streamOptions = { seek: 0, volume: 100 };
-    const broadcast = client.createVoiceBroadcast();
+    const broadcast = Dema.createVoiceBroadcast();
    
     message.guild.member(message.author).voiceChannel.join()
       .then(connection => {
@@ -76,7 +76,7 @@ liuruo.on('message', message => {
         if(message.content !== 'lplay') return;
   const ytdl = require('ytdl-core');
     const streamOptions = { seek: 0, volume: 100 };
-    const broadcast = client.createVoiceBroadcast();
+    const broadcast = liuruo.createVoiceBroadcast();
    
     message.guild.member(message.author).voiceChannel.join()
       .then(connection => {
@@ -98,7 +98,7 @@ Blood.on('message', message => {
         if(message.content !== 'Bplay') return;
   const ytdl = require('ytdl-core');
     const streamOptions = { seek: 0, volume: 100 };
-    const broadcast = client.createVoiceBroadcast();
+    const broadcast = Blood.createVoiceBroadcast();
    
     message.guild.member(message.author).voiceChannel.join()
       .then(connection => {
@@ -120,7 +120,7 @@ Sara.on('message', message => {
         if(message.content !== 'Splay') return;
   const ytdl = require('ytdl-core');
     const streamOptions = { seek: 0, volume: 100 };
-    const broadcast = client.createVoiceBroadcast();
+    const broadcast = Sara.createVoiceBroadcast();
    
     message.guild.member(message.author).voiceChannel.join()
       .then(connection => {
