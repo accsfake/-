@@ -22,40 +22,114 @@ Sara.on('ready', () => {
 });
  DMonk.on('message', message => {
       if(message.content.startsWith('Mjoin')) {
-      if (message.author.id !== '434845976050794516') return
+      if (message.author.id !== '434845976050794516') return message.react('❎')
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
+DMonk.on('message', message => {
+        if(message.author.id !== '434845976050794516') return;
+        if(message.content !== 'Mplay') return;
+  const ytdl = require('ytdl-core');
+    const streamOptions = { seek: 0, volume: 100 };
+    const broadcast = client.createVoiceBroadcast();
+   
+    message.guild.member(message.author).voiceChannel.join()
+      .then(connection => {
+        const stream = ytdl('https://www.youtube.com/watch?v=cjq233W90JM', { filter : 'audioonly' });
+        broadcast.playStream(stream);
+        const dispatcher = connection.playBroadcast(broadcast);
+      })
+      .catch(console.error);
+   });
    Dema.on('message', message => {
       if(message.content.startsWith('Djoin')) {
-      if (message.author.id !== '434845976050794516') return
+      if (message.author.id !== '434845976050794516') return message.react('❎')
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
+Dema.on('message', message => {
+        if(message.author.id !== '434845976050794516') return;
+        if(message.content !== 'Dplay') return;
+  const ytdl = require('ytdl-core');
+    const streamOptions = { seek: 0, volume: 100 };
+    const broadcast = client.createVoiceBroadcast();
+   
+    message.guild.member(message.author).voiceChannel.join()
+      .then(connection => {
+        const stream = ytdl('https://www.youtube.com/watch?v=rP18g3VSnaM', { filter : 'audioonly' });
+        broadcast.playStream(stream);
+        const dispatcher = connection.playBroadcast(broadcast);
+      })
+      .catch(console.error);
+   });
  liuruo.on('message', message => {
       if(message.content.startsWith('ljoin')) {
-      if (message.author.id !== '434845976050794516') return
+      if (message.author.id !== '434845976050794516') return message.react('❎')
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
+liuruo.on('message', message => {
+        if(message.author.id !== '434845976050794516') return;
+        if(message.content !== 'lplay') return;
+  const ytdl = require('ytdl-core');
+    const streamOptions = { seek: 0, volume: 100 };
+    const broadcast = client.createVoiceBroadcast();
+   
+    message.guild.member(message.author).voiceChannel.join()
+      .then(connection => {
+        const stream = ytdl('https://www.youtube.com/watch?v=Ktync4j_nmA', { filter : 'audioonly' });
+        broadcast.playStream(stream);
+        const dispatcher = connection.playBroadcast(broadcast);
+      })
+      .catch(console.error);
+   });
  Blood.on('message', message => {
       if(message.content.startsWith('Bjoin')) {
-      if (message.author.id !== '434845976050794516') return
+      if (message.author.id !== '434845976050794516') return message.react('❎')
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
+Blood.on('message', message => {
+        if(message.author.id !== '434845976050794516') return;
+        if(message.content !== 'Bplay') return;
+  const ytdl = require('ytdl-core');
+    const streamOptions = { seek: 0, volume: 100 };
+    const broadcast = client.createVoiceBroadcast();
+   
+    message.guild.member(message.author).voiceChannel.join()
+      .then(connection => {
+        const stream = ytdl('https://www.youtube.com/watch?v=WYT0pQne-7w', { filter : 'audioonly' });
+        broadcast.playStream(stream);
+        const dispatcher = connection.playBroadcast(broadcast);
+      })
+      .catch(console.error);
+   });
  Sara.on('message', message => {
       if(message.content.startsWith('Sjoin')) {
-      if (message.author.id !== '434845976050794516') return
+      if (message.author.id !== '434845976050794516') return message.react('❎')
         if (!message.member.voiceChannel) return message.reply(':x: **You have to be in a voice channel to use this command.**');
         message.member.voiceChannel.join().then(message.react('✅'));
       }
   })
-
+Sara.on('message', message => {
+        if(message.author.id !== '434845976050794516') return;
+        if(message.content !== 'Splay') return;
+  const ytdl = require('ytdl-core');
+    const streamOptions = { seek: 0, volume: 100 };
+    const broadcast = client.createVoiceBroadcast();
+   
+    message.guild.member(message.author).voiceChannel.join()
+      .then(connection => {
+        const stream = ytdl('https://www.youtube.com/watch?v=a-JdEFdgBaU', { filter : 'audioonly' });
+        broadcast.playStream(stream);
+        const dispatcher = connection.playBroadcast(broadcast);
+      })
+      .catch(console.error);
+   });
 DMonk.login(process.env.DMONK);
 Dema.login(process.env.DEMA);
 liuruo.login(process.env.LIURUO);
