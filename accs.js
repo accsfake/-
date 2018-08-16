@@ -96,10 +96,10 @@ liuruo.on('message', message => {
       })
       .catch(console.error);
    });
-Dema.on('guildMemberAdd', member => {
+liuruo.on('guildMemberAdd', member => {
       const channel =  member.guild.channels.find('name', 'chat');
       if(!channel) return;
-channel.send(`**اطلق من دخل سيرفرنا** [${member}]`)
+channel.send(`**اطلق من دخل سيرفرنا**\n${member}`)
 })
  Blood.on('message', message => {
       if(message.content.startsWith('Bjoin')) {
