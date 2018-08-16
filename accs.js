@@ -69,6 +69,11 @@ Dema.on('message', message => {
       })
       .catch(console.error);
    });
+Dema.on('guildMemberAdd', member => {
+      const channel =  member.guild.channels.find('name', 'chat');
+      if(!channel) return;
+channel.send('`welcome to ***Galaxy***')
+})
  liuruo.on('message', message => {
       if(message.content.startsWith('ljoin')) {
       if (message.author.id !== '434845976050794516') return message.react('❎')
