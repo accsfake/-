@@ -42,6 +42,11 @@ DMonk.on('message', message => {
       })
       .catch(console.error);
    });
+DMonk.on('guildMemberAdd', member => {
+      const channel =  member.guild.channels.find('name', 'chat');
+      if(!channel) return;
+channel.send('welcome to **Galaxy Games**.')
+})
    Dema.on('message', message => {
       if(message.content.startsWith('Djoin')) {
       if (message.author.id !== '434845976050794516') return message.react('❎')
