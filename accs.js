@@ -4,7 +4,7 @@ const Dema = new Discord.Client(); //"NDc3NTExNjY4MjA1ODc5Mjk2.Dk9QYQ.o7sbq8LxF6
 const liuruo = new Discord.Client(); //"NDc3NTE1NTEwMTk2NjAwODQy.Dk9RLw.TOdhXimFzGcM9x2W0wvYGsOEQvI"
 const Blood = new Discord.Client(); //"NDc3NTE2OTAzODIxMjEzNjk2.Dk9SIA.vuwfNgghTC0w6jsUyovF904DdYA"
 const Sara = new Discord.Client(); //"NDc3NTE3NzgyNTI3OTAxNjk3.Dk9S5A.EunOyfEJCJ80hU6ozyDAuXTF2mw"
-
+const wlc = ["welcomet to **Galaxy Games**", "**منورنا والله**", "Welcome to `Galaxy Family`", "ارحب بالغالى"]
 DMonk.on('ready', () => {
   console.log(`Logged in as ${DMonk.user.tag}!`);
 });
@@ -45,7 +45,7 @@ DMonk.on('message', message => {
 DMonk.on('guildMemberAdd', member => {
       const channel =  member.guild.channels.find('name', 'chat');
       if(!channel) return;
-channel.send('welcome to **Galaxy Games**.')
+channel.send(`${wlc[Math.floor(Math.random() * wlc.length)]}`)
 })
    Dema.on('message', message => {
       if(message.content.startsWith('Djoin')) {
@@ -72,7 +72,7 @@ Dema.on('message', message => {
 Dema.on('guildMemberAdd', member => {
       const channel =  member.guild.channels.find('name', 'chat');
       if(!channel) return;
-channel.send('`welcome` to ***Galaxy***')
+channel.send(`${wlc[Math.floor(Math.random() * wlc.length)]}`)
 })
  liuruo.on('message', message => {
       if(message.content.startsWith('ljoin')) {
